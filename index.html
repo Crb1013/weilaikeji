@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="未来软件 - 提供创新科技解决方案，包括未来地图、未来便签和未来音乐等产品">
+    <meta name="keywords" content="未来软件,未来地图,未来便签,未来音乐,创新科技">
+    <meta name="author" content="未来软件团队">
+    <title>未来软件 - 创新科技解决方案</title>
+    <!-- 引入外部资源 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- 引入本地CSS文件 -->
+    <link rel="stylesheet" href="future_software.css">
+    <!-- 网站图标 -->
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath d='M30 50L45 65L75 35' stroke='%23FFC107' stroke-width='10' stroke-linecap='round' stroke-linejoin='round' fill='none'/%3E%3C/svg%3E" type="image/svg+xml">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <h1>未来软件</h1>
+            </div>
+            <div class="menu">
+            <a href="#" class="menu-item">首页</a>
+            <a href="#products" class="menu-item">产品</a>
+            <a href="#about" class="menu-item">关于我们</a>
+        </div>
+        <!-- 用户信息显示区 -->
+        <div id="user-info" class="user-info" style="display: none;">
+            <div class="user-profile">
+                <div class="avatar-wrapper">
+                    <img id="user-avatar" src="https://picsum.photos/seed/avatar/100/100" alt="用户头像" class="user-avatar">
+                    <div class="avatar-dropdown">
+                        <div class="dropdown-content">
+                            <div class="dropdown-item username-item">
+                                <span id="username-display"></span>
+                            </div>
+                            <div class="dropdown-divider"></div>
+                            <button id="logout-btn" class="dropdown-btn">退出登录</button>
+                            <button id="delete-account-btn" class="dropdown-btn delete-btn">注销账户</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="auth-buttons">
+            <button id="login-btn" class="btn-auth">登录</button>
+            <!-- 隐藏注册按钮 -->
+            <button id="register-btn" class="btn-auth btn-primary" style="display: none;">注册</button>
+        </div>
+        <div class="mobile-menu-btn">
+            <i class="fas fa-bars"></i>
+        </div>
+        </div>
+    </nav>
+
+    <!-- 英雄区域 -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content fade-in-up">
+            <h2>未来软件<br>引领数字世界新未来</h2>
+            <p>我们致力于为您提供最前沿的软件解决方案，让科技改变生活，创造无限可能。</p>
+            <a href="#products" class="btn-primary">探索产品</a>
+        </div>
+        <div class="hero-image fade-in-up">
+            <div class="hero-shape"></div>
+        </div>
+        </div>
+    </section>
+
+    <!-- 产品展示 -->
+    <section id="products" class="products">
+        <div class="container">
+            <h2 class="section-title">我们的产品</h2>
+            <p class="section-subtitle">为您打造智能、高效、便捷的数字化生活体验</p>
+            
+            <div class="product-grid">
+                <!-- 未来地图 -->
+                <div class="product-card fade-in-up">
+                    <div class="product-icon map-icon">
+                        <i class="fas fa-map-marked-alt"></i>
+                    </div>
+                    <h3>未来地图（开发中）</h3>
+                    <p>探索无限可能的未来世界，智能导航，实时更新，为您的旅程提供全方位的支持。</p>
+                    <a href="#" class="product-btn" id="map-button">立即体验</a>
+                </div>
+                
+                <!-- 未来便签 -->
+                <div class="product-card fade-in-up">
+                    <div class="product-icon note-icon">
+                        <i class="fas fa-sticky-note"></i>
+                    </div>
+                    <h3>未来便签</h3>
+                    <p>智能记录，让您的灵感和计划永不丢失。</p>
+                    <a href="#" class="product-btn" id="note-button">立即体验</a>
+                </div>
+                
+                <!-- 未来音乐 -->
+                <div class="product-card fade-in-up">
+                    <div class="product-icon music-icon">
+                        <i class="fas fa-music"></i>
+                    </div>
+                    <h3>未来音乐（测试版）</h3>
+                    <p>沉浸式音乐体验，让您的耳朵享受未来的声音。（测试版，功能有限，无法在线听歌）</p>
+                    <a href="#" class="product-btn" id="music-button">立即体验</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 关于我们 -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <h2 class="section-title">关于我们</h2>
+                <p>未来软件是一家专注于智能科技产品开发的创新型企业。我们致力于通过先进的技术为用户提供高质量的数字化生活体验。</p>
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <h4>5</h4>
+                        <p>个人技术人员</p>
+                    </div>
+                    <div class="stat-item">
+                        <h4>3</h4>
+                        <p>产品</p>
+                    </div>
+                    <div class="stat-item">
+                        <h4 id="user-count">50+</h4>
+                        <p>全国用户</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-logo">
+                <h3>未来软件</h3>
+                <p>创新科技，智能生活</p>
+            </div>
+            <div class="footer-links">
+                <h4>快速链接</h4>
+                <a href="#">首页</a>
+                <a href="#products">产品</a>
+                <a href="#about">关于我们</a>
+            </div>
+            <div class="footer-social">
+                <h4>联系我们</h4>
+                <div style="margin-top: 15px;">
+                    <div class="contact-info-item">
+                        <i class="fab fa-qq"></i>
+                        <span>QQ群：237847470</span>
+                    </div>
+                    <div class="contact-info-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>Email: crb23451@outlook.com</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 未来软件. 保留所有权利.</p>
+        </div>
+    </footer>
+
+    <!-- 登录模态框 -->
+    <div id="login-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>用户登录</h3>
+                <button class="close-btn">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form id="login-form" class="auth-form">
+                    <div class="form-group">
+                        <label for="login-username">用户名</label>
+                        <input type="text" id="login-username" name="username" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="login-password">密码</label>
+                        <input type="password" id="login-password" name="password" required>
+                    </div>
+                    <div class="forgot-password">
+                        <a href="#" id="forgot-password-link">忘记密码？</a>
+                    </div>
+                    <button type="submit" class="btn-primary">登录</button>
+                </form>
+                <div class="auth-toggle">
+                    <p>还没有账号？ <a href="#" id="toggle-register">立即注册</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 注册模态框 -->
+    <div id="register-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>用户注册</h3>
+                <button class="close-btn">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form id="register-form" class="auth-form">
+                    <div class="form-group avatar-group">
+                        <label for="register-avatar">头像</label>
+                        <div class="avatar-upload">
+                            <div class="avatar-preview">
+                                <img id="avatar-preview" src="https://picsum.photos/seed/avatar/100/100" alt="头像预览">
+                            </div>
+                            <input type="file" id="register-avatar" name="avatar" accept="image/*" onchange="previewAvatar(this)">
+                            <label for="register-avatar" class="avatar-upload-btn">选择头像</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="register-username">用户名</label>
+                        <input type="text" id="register-username" name="username" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="register-password">密码（8-12位）</label>
+                        <input type="password" id="register-password" name="password" minlength="8" maxlength="12" pattern=".{8,12}" required title="密码必须为8-12位">
+                    </div>
+                    <div class="form-group">
+                        <label for="register-confirm-password">确认密码</label>
+                        <input type="password" id="register-confirm-password" name="confirm-password" minlength="8" maxlength="12" required>
+                    </div>
+                    <button type="submit" class="btn-primary">注册</button>
+                </form>
+                <div class="auth-toggle">
+                    <p>已有账号？ <a href="#" id="toggle-login">立即登录</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 忘记密码模态框 -->
+    <div id="forgot-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>忘记密码</h3>
+                <button class="close-btn">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form id="forgot-form" class="auth-form">
+                    <div class="form-group">
+                        <label for="forgot-username">用户名</label>
+                        <input type="text" id="forgot-username" name="username" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="forgot-security-code">安全代号</label>
+                        <input type="text" id="forgot-security-code" name="securityCode" required placeholder="例如：A1B2C">
+                    </div>
+                    <div class="form-group">
+                        <label for="forgot-new-password">新密码（8-12位）</label>
+                        <input type="password" id="forgot-new-password" name="newPassword" minlength="8" maxlength="12" pattern=".{8,12}" required title="密码必须为8-12位">
+                    </div>
+                    <div class="form-group">
+                        <label for="forgot-confirm-password">确认新密码</label>
+                        <input type="password" id="forgot-confirm-password" name="confirmPassword" minlength="8" maxlength="12" required>
+                    </div>
+                    <button type="submit" class="btn-primary">重置密码</button>
+                </form>
+                <div class="auth-toggle">
+                    <p>记得密码了？ <a href="#" id="toggle-back-to-login">返回登录</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- 登录提示模态框 -->
+    <div id="login-prompt-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3> 功能提示</h3>
+                <button class="close-btn">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="prompt-content">
+                    <p>登录账号可享受以下特权：</p>
+                    <ul>
+                        <li> 跨设备云端同步便签数据</li>
+                        <li> 数据持久化存储</li>
+                        <li> 安全可靠的用户认证</li>
+                        <li> 个性化数据统计</li>
+                    </ul>
+                    <div class="prompt-actions">
+                        <button id="prompt-login-btn" class="btn-primary">立即登录</button>
+                        <button id="prompt-later-btn" class="btn-secondary">稍后再说</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 引入本地JavaScript文件 -->
+    <script src="future_software.js"></script>
+</body>
+</html>
